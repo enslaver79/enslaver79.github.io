@@ -1,0 +1,363 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: linear-gradient(to right, #3525af, #9153c9);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #202020; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header{
+    width: 100vw;
+}
+header{
+    width: 100vw;
+    background-color: rgb(31, 34, 43);
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+           
+}
+.nav{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    max-width: 1000px;
+}
+
+.i-nav{
+    margin: 10px;
+    color: black;
+
+}
+
+.ico:hover{
+    transform: scale(1.5
+    );
+}
+#header-left {
+    width: 30%;
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+    justify-content: center;
+}    
+#header-left img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;        
+        border: 5px solid white;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+        filter: grayscale(80%);
+        transition: .5s;
+        }
+#header-left img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    box-shadow: 3px 3px30px rgba(0, 0, 0, .5);
+}
+#header-right{
+    /* position:relative; */
+    width: 70%;
+    color:white; 
+    display: flex;
+    justify-content: center;  
+    
+       
+}
+#h1{
+    font-size: 70px;
+    /* text-shadow: 2px 2px pink; */
+}
+    
+
+        
+main{
+    width: 100vw;
+    height: auto;
+    max-width: 1000px;
+    display: flex;
+    
+
+}
+.main-left{
+    width: 30%;
+    padding: 30px;
+    background-color:rgb(60, 59, 63);
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 100%;
+    text-shadow:2px 2px #fff;
+    /* color: #3525af; */
+}
+.ul-contacto{
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+
+}
+
+.main-left .li-contacto{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: center;
+            
+}
+.main-left .li-contacto .icono-contacto{
+    font-size: 30px;
+    color: #9153c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    
+}
+.main-left .li-contacto .texto-contacto{
+    color: #fff;
+    font-size: 15px;
+    width: calc(100% - 50px);
+    word-break: break-all;
+}
+.ul-skills{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+}
+#h3{
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 2px 2px #fff;
+}
+.li-skill-img , .li-skill-text{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.li-skill-img{
+   font-size: 30px;     
+   color: #9153c9; 
+   height: 50px;
+   background-color: 
+      
+   
+}
+.li-skill-text{
+    color: #fff;
+}
+.icono-contacto:hover, .li-skill-img:hover{
+    transform: scale(1.5);
+}
+
+.hobbies{
+    text-decoration: none;
+    color: #9153c9;
+    padding: 10px 10px;
+    border: 1px white solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.abrir-hobbies{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+   
+}
+.hobbies--mostrar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 1;
+    pointer-events: unset;
+   
+}
+
+
+
+.abrir-hobbies-contenedor{
+    width: 90%;
+    background-color: #fff;
+    margin: auto;
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    place-items: center;
+    grid-auto-columns: 100%;
+
+    }
+.hobbies-titulo{
+    color: #9153c9;
+    font-size: 30px;
+    }
+.hobbies-parrafo{
+    margin-bottom: 10px;
+}
+.cerrar-hobbies{
+    text-decoration: none;
+    color: #fff;
+    background-color: #9153c9;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+
+
+.main-right{
+    width: 70%;
+    background-color: #fff;
+    padding: 30px;
+}
+.exp{
+    font-size: 30px;
+    text-align: right;
+}
+.ul-experiencia{
+    list-style: none;
+    
+}
+.date, .compania{
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.p-info{
+    font-size: 15px;
+}
+
+
+
+@media (max-width: 800px){
+    body{
+        width: 100%;
+    }
+    header{
+        
+        margin-top: 0;
+        position: relative;
+        height: auto;
+        background-color: rgb(31, 34, 43);
+        flex-direction: column;
+        width: 100%;
+        padding: 40px 0 0 0;
+        
+    }    
+    nav{
+        width: 100%;
+    }
+    #header-left{
+        width: 100vw;
+    }
+    .ul-contacto{
+        padding: 0
+        ;
+    }
+    #header-right{
+        width: 100%;
+        height: 120px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #header-right h1{
+        position: absolute;
+        font-size: 50px;
+    }
+    main{
+        width: 100vw;
+        margin-top: 0;
+    }
+    .main-left{
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        
+    }
+    h2, #h3{
+        font-size: 12px;
+    }
+    .main-right{
+        width: 70%;
+        padding: 10px;
+    }
+    .ul-experiencia{
+        padding: 10px
+        ;
+    }
+    .main-left .li-contacto .icono-contacto{
+        font-size: 15px;
+    }
+    .main-left .li-contacto .texto-contacto{
+        font-size: 10px;
+    }
+    .exp{
+        font-size: 12px;
+        text-align: left;
+        padding: 0;
+    }
+    .date, .compania{
+        margin: 0
+        ;
+    }
+    .date , .compania, .p-info{
+        font-size: 10px;
+    }
+    .li-skill-img{
+        font-size: 20px;
+    }
+    .li-skill-text{
+        font-size: 10px;
+    }
+
+   
+
+    }
